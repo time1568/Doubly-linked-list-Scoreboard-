@@ -85,12 +85,12 @@ public class SortList {
 
     public void newscore() {
         Node current = tail;
-        System.out.println(current.name + " got new score: " + current.data);
+        System.out.println("\n" + current.name + " got new score: " + current.data);
     }
 
     public void remove_last_report() {
         Node current = tail;
-        System.out.println(current.name + " was removed from the scoreboard.");
+        System.out.println(current.name + " was removed from the scoreboard.\n");
     }
 
     void deleteNode(Node del) {
@@ -137,7 +137,11 @@ public class SortList {
         dList.addNode(60, "Holiday");
 
         // Scoreboard
-        System.out.println("Scoreboard: ");
+        System.out.println("\nScoreboard: ");
+        dList.display();
+        System.out.println(".......................................");
+
+        System.out.println("\nSorted scoreboard: ");
         dList.sortList();
         dList.display();
 
@@ -145,7 +149,7 @@ public class SortList {
         // Update
         dList.addNode(80, "Jameski");
         dList.newscore();
-        // New scoreboard
+        // New score board
         System.out.println("\nScoreboard: ");
         dList.sortList();
         dList.deleteNode(dList.tail);
