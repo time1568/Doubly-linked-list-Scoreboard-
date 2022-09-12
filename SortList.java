@@ -145,7 +145,7 @@ public class SortList {
         // Update
         dList.addNode(80, "Jameski");
         dList.newscore();
-        // New score board
+        // New scoreboard
         System.out.println("\nScoreboard: ");
         dList.sortList();
         dList.deleteNode(dList.tail);
