@@ -144,11 +144,12 @@ public class SortList {
         System.out.println("\nSorted scoreboard: ");
         dList.sortList();
         dList.display();
-
         System.out.println(".......................................");
+        
         // Update
         dList.addNode(80, "Jameski");
         dList.newscore();
+        
         // New score board
         System.out.println("\nScoreboard: ");
         dList.sortList();
